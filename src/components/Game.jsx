@@ -3,7 +3,7 @@ import { useState } from "react";
 import Winner from "./Winner";
 
 export default function Game() {
-  
+
   const [shape, setShape] = useState("x");
   const [winner, setWinner] = useState(null);
   const [arr, setArr] = useState(Array(9).fill(null));
@@ -70,7 +70,7 @@ export default function Game() {
         </>
       ) : (
         <Container>
-          Turn of:{shape}
+          Turn of : <span style={{color:'green', fontSize: 'xx-large'}}>{shape}</span>
           <Row>
             <Col>
               <Square num={0} />

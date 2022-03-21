@@ -3,7 +3,7 @@ export default function Winner({ value }) {
   return (
     <div className="winner">
       <Confetti />
-      <p>winner is {value} </p>
+      <p>winner is <span style={{color:'green'}}>{value}</span> </p>
     </div>
   );
 }
